@@ -1,7 +1,7 @@
 # swagger-UI-hello-world
 This demo shows how to connect a swagger-node project to swagger-ui.
 
-for in-code step by steps notes - see [app.js](https://github.com/Webiks/swagger-UI-hello-world\app.js)
+for in-code step by steps notes - see [app.js](https://github.com/Webiks/swagger-UI-hello-world/blob/master/app.js)
 
 ## 1. start a [swagger project](https://www.npmjs.com/package/swagger)
 `$ npm install -g swagger`
@@ -9,7 +9,7 @@ for in-code step by steps notes - see [app.js](https://github.com/Webiks/swagger
 `$ swagger project create hello-world`
 
 
-## 2.add access point to swagger.yaml. see [app.js](https://github.com/Webiks/swagger-UI-hello-world\app):
+## 2.add access point to swagger.yaml. see [app.js](https://github.com/Webiks/swagger-UI-hello-world/blob/master/app.js):
 `
 app.get('/swagger.yaml', function(req, res) {
 
@@ -19,7 +19,7 @@ app.get('/swagger.yaml', function(req, res) {
 `
 ## 3. add and serving public folder
 * create `public` folder in the root location (same as `app.js` file)
-* Serve it as static folder see [app.js](https://github.com/Webiks/swagger-UI-hello-world\app):
+* Serve it as static folder see [app.js](https://github.com/Webiks/swagger-UI-hello-world/blob/master/app.js):
 
 `
 app.use(express.static(path.join(__dirname, 'public')));
