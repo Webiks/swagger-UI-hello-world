@@ -28,15 +28,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 * in `api-docs\index.html` change:
 `url = "http://petstore.swagger.io/v2/swagger.json";`
 to:
-`http://localhost:10010/swagger.yaml`
+`url = "http://" + window.location.host + "/swagger.yaml"`
 
 
 After these steps, start the project normally with:
-`swagger project start`
+`swagger project start`<br>
+To check your endpoint: `http://localhost:10010/hello/`<br>
 
 You can get your docs at: `http://localhost:10010/api-docs/`
 
 For more info check out [this article](http://mherman.org/blog/2016/05/26/swagger-and-nodejs/#.WUeECH6GM8p)
-
-NOTE: if you're using system variables (rocess.env.PORT) make sure to update
-the port in `api-docs\index.html` accordingly.
